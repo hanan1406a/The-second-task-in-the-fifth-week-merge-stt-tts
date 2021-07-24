@@ -1,0 +1,688 @@
+{
+  "intents": [
+    {
+      "intent": "Customer_Care_Bye",
+      "examples": [
+        {
+          "text": "bye"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "have a nice day"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "time to go"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Customer_Care_Contact_Us",
+      "examples": [
+        {
+          "text": "Hi can you let me have the telephone number of the store please?"
+        },
+        {
+          "text": "How can I contact your business?"
+        },
+        {
+          "text": "Is there a phone number to your store ?"
+        },
+        {
+          "text": "Need your phone number"
+        },
+        {
+          "text": "What is the customer number?"
+        },
+        {
+          "text": "What is the store phone number?"
+        },
+        {
+          "text": "What is you email?"
+        },
+        {
+          "text": "Who can I call?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Customer_Care_Evaluate",
+      "examples": [
+        {
+          "text": "Evaluate the place"
+        },
+        {
+          "text": "I want to Evaluate the service"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Customer_Care_Greeting",
+      "examples": [
+        {
+          "text": "aloha"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "greeting"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Customer_Care_Store_Days",
+      "examples": [
+        {
+          "text": "is it your store open in the weekend"
+        },
+        {
+          "text": "What days is your store open"
+        },
+        {
+          "text": "What days is your store open?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Customer_Care_Store_Hours",
+      "examples": [
+        {
+          "text": "Are the stores open early?"
+        },
+        {
+          "text": "Are you open on sundays, and if so what are the hours?"
+        },
+        {
+          "text": "At what hour can I swing by?"
+        },
+        {
+          "text": "How early do you open?"
+        },
+        {
+          "text": "How long are you open?"
+        },
+        {
+          "text": "What are the hours of operation?"
+        },
+        {
+          "text": "What are your hours?"
+        },
+        {
+          "text": "What is the opening time for the store?"
+        },
+        {
+          "text": "What time are you closing today?"
+        },
+        {
+          "text": "What time do stores close?"
+        }
+      ],
+      "description": "Find business hours."
+    },
+    {
+      "intent": "Customer_Care_Store_Location",
+      "examples": [
+        {
+          "text": "Find store"
+        },
+        {
+          "text": "Go to your company"
+        },
+        {
+          "text": "I'd like to go to a store"
+        },
+        {
+          "text": "I need help with find a store"
+        },
+        {
+          "text": "I want to know about a store"
+        },
+        {
+          "text": "Looking for a location"
+        },
+        {
+          "text": "Where are you located?"
+        },
+        {
+          "text": "Where is?"
+        },
+        {
+          "text": "Where is your store?"
+        }
+      ],
+      "description": "Locate a physical store location or an address."
+    },
+    {
+      "intent": "Customer_Care_Thanking",
+      "examples": [
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thank you"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "contact",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "contact",
+          "synonyms": [
+            "communicate",
+            "communicating",
+            "connections",
+            "contacts"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "phone",
+          "synonyms": [
+            "cellphone",
+            "cellphones",
+            "email",
+            "telephone"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "day",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "day",
+          "synonyms": [
+            "days",
+            "daytime",
+            "lunchtimes",
+            "mondays",
+            "tuesdays",
+            "week",
+            "weekdays",
+            "weekend",
+            "weekends",
+            "weeks"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Evaluate",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Evaluate",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "excellent",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "excellent",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "good",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "loc",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "location",
+          "synonyms": [
+            "area",
+            "building",
+            "facility",
+            "locations",
+            "site"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "not_good",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "not good",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "thanks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "thank",
+          "synonyms": [
+            "grateful",
+            "thanking"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "very_good",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "very good",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_7_1626285705308",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, happy to help you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Greeting",
+      "dialog_node": "node_10_1626285652029",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "thanking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Any time"
+              },
+              {
+                "text": "Happy to help you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Thanking",
+      "dialog_node": "node_10_1626285804167",
+      "previous_sibling": "node_8_1626285740643"
+    },
+    {
+      "type": "standard",
+      "title": "very good",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your evaluate 😍, we will work to improve our services for your satisfaction."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626285755000",
+      "conditions": "@very_good",
+      "dialog_node": "node_10_1626286343477",
+      "previous_sibling": "node_1_1626286340497"
+    },
+    {
+      "type": "standard",
+      "title": "Store_Location",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You'll find our store location in google map, just type the store name."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Store_Location || @loc",
+      "dialog_node": "node_1_1626285787655",
+      "previous_sibling": "node_6_1626287575027"
+    },
+    {
+      "type": "standard",
+      "title": "excellent ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your evaluate 😍"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626285755000",
+      "conditions": "@excellent",
+      "dialog_node": "node_1_1626286340497"
+    },
+    {
+      "type": "standard",
+      "title": "good",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your evaluate 😍, we will work to improve our services for your satisfaction."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626285755000",
+      "conditions": "@good",
+      "dialog_node": "node_3_1626286347745",
+      "previous_sibling": "node_10_1626286343477"
+    },
+    {
+      "type": "standard",
+      "title": "Evaluate",
+      "output": {
+        "generic": [
+          {
+            "title": "What is your evaluation",
+            "options": [
+              {
+                "label": "Excellent",
+                "value": {
+                  "input": {
+                    "text": "excellent"
+                  }
+                }
+              },
+              {
+                "label": "Very good",
+                "value": {
+                  "input": {
+                    "text": "very good"
+                  }
+                }
+              },
+              {
+                "label": "Good",
+                "value": {
+                  "input": {
+                    "text": "good"
+                  }
+                }
+              },
+              {
+                "label": "Not good",
+                "value": {
+                  "input": {
+                    "text": "not good"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Evaluate && @Evaluate",
+      "dialog_node": "node_4_1626285755000",
+      "previous_sibling": "node_10_1626285652029"
+    },
+    {
+      "type": "standard",
+      "title": "not good",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for your evaluate , and we're sorry we will work to improve our services for your satisfaction."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1626285755000",
+      "conditions": "@not_good",
+      "dialog_node": "node_5_1626286350341",
+      "previous_sibling": "node_3_1626286347745"
+    },
+    {
+      "type": "standard",
+      "title": "open_days",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our store is open on all the weekdays, happy to have you there"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Store_Days || @day",
+      "dialog_node": "node_6_1626287575027",
+      "previous_sibling": "node_9_1626285768545"
+    },
+    {
+      "type": "standard",
+      "title": "Bye",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "See you soon and have a nice day."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Bye",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1626285705308",
+      "previous_sibling": "node_10_1626285804167"
+    },
+    {
+      "type": "standard",
+      "title": "Contact_Us",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Of course you can contact us via"
+              },
+              {
+                "text": "+966555555"
+              },
+              {
+                "text": "storename@store.com"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Contact_Us || @contact",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1626285740643",
+      "previous_sibling": "node_1_1626285787655"
+    },
+    {
+      "type": "standard",
+      "title": "Store_Hours",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Our store open from 9AM until 11PM. We'll be happy to welcome you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Customer_Care_Store_Hours || @sys-time",
+      "dialog_node": "node_9_1626285768545",
+      "previous_sibling": "node_4_1626285755000"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. How can I help you today?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "services",
+  "language": "en",
+  "description": ""
+}
