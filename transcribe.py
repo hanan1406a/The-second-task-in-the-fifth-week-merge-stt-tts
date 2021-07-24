@@ -208,8 +208,8 @@ def main():
     text   = json.dumps(response, indent=2)
     write  = json.loads(text)
     speech = json.dumps(write["output"]["generic"][0].get("text"))
-    with open('tts_audio.mp3', 'wb') as a:
-      res = tts.synthesize(speech, accept='audio/mp3', voice='en-US_AllisonV3Voice').get_result()
+    with open('speech.mp3', 'wb') as a:
+      res = tts.synthesize(speech, accept='speecho/mp3', voice='en-US_AllisonV3Voice').get_result()
       a.write(res.content)
       a.close() 
     print(speech) 
